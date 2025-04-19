@@ -64,7 +64,9 @@ const Cart = () => {
             >
               <div>
                 <h2 className="font-semibold">{item.name}</h2>
-                <p>₹{item.price} × {item.quantity}</p>
+                <p>
+                  ₹{item.price} × {isNaN(item.quantity) ? 0 : item.quantity}
+                </p>
               </div>
               <input
                 type="number"
@@ -84,7 +86,7 @@ const Cart = () => {
             </div>
           ))}
           <div className="text-right text-lg font-semibold">
-            Total: ₹{total}
+            Total: ₹{isNaN(total) ? 0 : total}
           </div>
           <input
             type="text"
