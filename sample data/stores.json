@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "68033624ff1267bbb3fc3d5c"
+  },
+  "name": "Fresh Mart",
+  "location": "MG Road"
+},
+{
+  "_id": {
+    "$oid": "68033624ff1267bbb3fc3d5d"
+  },
+  "name": "Organic Hub",
+  "location": "Indiranagar"
+},
+{
+  "_id": {
+    "$oid": "68033624ff1267bbb3fc3d5e"
+  },
+  "name": "Local Greens",
+  "location": "Koramangala"
+}]

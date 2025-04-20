@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "68033619ff1267bbb3fc3d57"
+  },
+  "name": "Apple",
+  "price": 150,
+  "quantity": 100,
+  "storeName": "Fresh Mart",
+  "storeId": {
+    "$oid": "68033624ff1267bbb3fc3d5c"
+  }
+},
+{
+  "_id": {
+    "$oid": "68033619ff1267bbb3fc3d58"
+  },
+  "name": "Banana",
+  "price": 50,
+  "quantity": 200,
+  "storeName": "Fresh Mart",
+  "storeId": {
+    "$oid": "68033624ff1267bbb3fc3d5c"
+  }
+},
+{
+  "_id": {
+    "$oid": "68033619ff1267bbb3fc3d59"
+  },
+  "name": "Tomato",
+  "price": 30,
+  "quantity": 150,
+  "storeName": "Organic Hub",
+  "storeId": {
+    "$oid": "68033624ff1267bbb3fc3d5d"
+  }
+},
+{
+  "_id": {
+    "$oid": "68033619ff1267bbb3fc3d5a"
+  },
+  "name": "Carrot",
+  "price": 40,
+  "quantity": 100,
+  "storeName": "Local Greens",
+  "storeId": {
+    "$oid": "68033624ff1267bbb3fc3d5e"
+  }
+}]

@@ -8,3 +8,15 @@ export const getProducts = async (id) => {
     },
   });
 };
+
+export const searchProducts = async (query) => {
+  return await fetch(
+    `${URL}/api/products/search/search?query=${encodeURIComponent(query)}`,
+    {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }
+  );
+};

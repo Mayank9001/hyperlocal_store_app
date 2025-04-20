@@ -17,4 +17,23 @@ router.get("/:storeid", async (req, res) => {
   }
 });
 
+router.get("/search/search", async (req, res) => {
+  const { query } = req.query;
+
+  if (!query) {
+    return res.status(400).json({ error: "Query parameter is required" });
+  }
+
+  try {
+    const products = await Products.find({
+      name: { $regex: query, $options: "i" }, // case-insensitive search
+    });
+
+    res.status(200).json(products);
+  } catch (err) {
+    console.error("Error during product search:", err);
+    res.status(500).json({ error: "Server error" });
+  }
+});
+
 module.exports = router;
