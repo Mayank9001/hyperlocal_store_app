@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { FaGithubSquare } from "react-icons/fa";
 const Navbar = () => {
   const navigate = useNavigate();
   return (
@@ -18,6 +19,13 @@ const Navbar = () => {
           <p>Cart</p>
         </li>
       </ul>
+      <a
+        href="https://github.com/Mayank9001"
+        target="_blank"
+        className="absolute bottom-5 right-5 text-gray-500 hover:text-gray-700 transition cursor-pointer"
+      >
+        <FaGithubSquare size={64} />
+      </a>
     </div>
   );
 };
